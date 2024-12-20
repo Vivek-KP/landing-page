@@ -1,0 +1,371 @@
+
+body{
+    margin: 0px;
+    height: 100%
+}
+p{
+    margin: 0%;
+    padding: 0%;
+}
+.body-wrapper{
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0px;
+        
+}
+
+header{
+    margin-left: 7%;
+    margin-top: 2%;
+   
+}
+
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+}
+.logo-nav-wrapper{
+    width: 65%;
+    display: flex;
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.log-title{
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    font-weight: 400;
+}
+li{
+    margin-right: 5%;
+    color: #838383;
+}
+
+.side-face-bar{
+    height:auto; 
+    background-color: #F1F6FE;
+    background-image: url('./asset/mask.png');
+    width: 35%; 
+    float: right;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.title{
+    font-size: x-large;
+    line-height: 1em;
+}
+.star-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.side-face-bar img{
+    padding-bottom: 1em;
+    
+}
+
+.side-face-bar-res{
+    display: none;
+}
+.promo{
+    padding-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.promo-title{
+    width: 14%;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.main-content{ 
+    margin-left: 7%;
+    margin-top: 8%;
+}
+.buttons{
+    display: flex;
+    padding-top: 52px;
+    margin-bottom: 22px;
+    align-items: center;
+    width: 60%;
+}
+
+.book-button{
+    padding: 3% 7%;
+    background: #2F584E;;
+    border-radius: 24px;
+    color: white;
+    font-size: 1em;
+}
+.play-button{
+    border-radius: 50%;
+    background: #FF9257;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    display: flex;
+    
+}
+
+.journey{
+    display: flex; 
+    align-items: center; 
+    padding-left: 3%;
+}
+
+.journey-text{
+    padding-left: 1%; 
+    padding-right: 3%;
+}
+.star-button{
+    border-radius: 50%;
+    background: #FF9257;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin-left: 4%;
+}
+.subtitle{
+    width: 60%;
+}
+
+.circle-container{
+    position: relative;
+    display: flex;
+    width: 20%;
+}
+
+.circle{
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.eclipse1{
+    position: absolute;
+    left: 20%
+}
+.eclipse2{
+    position: absolute;
+    left: 40%
+}
+
+.left-bar-circle{
+    border-radius: 50%;
+}
+
+.left-bar-square{
+    border-radius: 10%;
+}
+
+.left-bar-shape{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.left-bar-half-circle{
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 75%;
+    border-bottom-right-radius: 5%;
+}
+
+.left-bar-face{
+    height: auto;
+    width: 45%;
+}
+
+button{
+   display: none;
+    
+}
+
+.footer{
+    background: #FF9257;
+    height: auto ;
+}
+.footer-content{
+    display: flex; 
+    justify-content: space-between; 
+    color: white; 
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 2% 0%;
+}
+.footer-element{
+    border: 2px solid #F7BE2C; 
+    padding: 2%;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+
+.footer-number{
+    font-size: 1.8em;
+}
+ul{
+    margin-top: 25%;
+}
+ul li{
+    color: black;
+    padding-top: 15%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -550px; 
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    color: #333;
+    overflow-x: hidden;
+    transition: right 0.3s ease; 
+    padding: 20px;
+    z-index: 100;
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    color: #333;
+  }
+  
+  
+  .sidebar.open {
+    right: 0; 
+  }
+
+@media (max-width:768px) {
+
+    .star-wrapper{
+        display: grid;
+    }
+    .star-button{
+        margin-left: 0px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+    button{
+        display: inline;
+        background-color: transparent;
+        border: none;
+        
+    }
+    .circle-container{
+        position: relative;
+        display: flex;
+        width: 50%;
+    }
+    .promo-title{
+        width: 50%;
+    }
+
+    .buttons{
+        display: flex;
+        padding-top: 52px;
+        margin-bottom: 22px;
+        align-items: center;
+        width: 100%;
+    }
+    .main-content{ 
+        margin-left: 7%;
+        margin-top: 8%;
+        margin-right: 7%;
+    }
+
+    .title{
+    
+        font-size: medium;
+        line-height: 1em;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .body-wrapper{
+        display: block; 
+        margin: 0px;
+       
+    }
+    .side-face-bar{
+        
+        display: none;
+    
+    }
+    .side-face-bar-res{
+        height:auto; 
+        background-color: #F1F6FE;
+        background-image: url('./asset/mask.png');
+        width: 100%; 
+        overflow-x: scroll;
+        float: right;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .side-face-bar-res img {
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  
+    .logo-nav-wrapper{
+        width: 100%;
+    }
+
+    header{
+        padding: 20px 10px;
+    }
+
+    .subtitle{
+        width: 100%;
+    }
+
+    
+}
+
+
+
+  
